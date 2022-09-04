@@ -1,0 +1,16 @@
+{
+  "name": "Replacer = test task",
+  "version": "0.1",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "web_accessible_resources": [{ 
+    "resources": ["*.html"],
+    "matches": ["<all_urls>"]
+    }],
+    "permissions": ["tabs"],
+  "manifest_version": 3
+}
